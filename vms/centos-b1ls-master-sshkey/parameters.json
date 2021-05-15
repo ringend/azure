@@ -1,0 +1,63 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "centralus"
+        },
+        "networkInterfaceName": {
+            "value": "cent8-chub-s1869"
+        },
+        "subnetName": {
+            "value": "uscent-hub-1-subnet"
+        },
+        "virtualNetworkId": {
+            "value": "/subscriptions/926984f7-30ab-4094-9fd5-36fa484fba5b/resourceGroups/djr-uscent-rg-1/providers/Microsoft.Network/virtualNetworks/uscent-hub-1"
+        },
+        "publicIpAddressName": {
+            "value": "cent8-chub-s1-ip"
+        },
+        "publicIpAddressType": {
+            "value": "Dynamic"
+        },
+        "publicIpAddressSku": {
+            "value": "Basic"
+        },
+        "virtualMachineName": {
+            "value": "cent8-chub-s1"
+        },
+        "virtualMachineComputerName": {
+            "value": "cent8-chub-s1"
+        },
+        "virtualMachineRG": {
+            "value": "cent8-chub-s1-rg"
+        },
+        "osDiskType": {
+            "value": "Standard_LRS"
+        },
+        "virtualMachineSize": {
+            "value": "Standard_B1ls"
+        },
+        "adminUsername": {
+            "value": "djr"
+        },
+        "adminPublicKey": {
+            "value": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDXcfW+hYblxamokqwIkfH6Kx9imA2xCdb1GiprWa3hijyww2S9oaCPdzC9vnWYu4Osc71nMKWVXFfNs3D2Xeerdyl3m0evE2D3t/A3NyigyNGOhyMUItlDdm+nIazct5ai+wuaoEB96INYNsErO3Fr3XAXm57jT988fx5vmVteIDdNISSovxr2gCBiFs8L1DFwH6MNXBn5N4+qBt7/u307n3ylG/qFoU6lo/0of9o4RCn1cZ1VdNeqVNPe8Dw9ydcFFYFiuU0+QyWoPXi6G+z5RhdbGOii+CiwTUPHFonra6jSi3xjaXinpiDfIvGxpml7SqPSSao0mZLgkSInFun5 djr@LAPTOP-51N42I5B\n"
+        },
+        "autoShutdownStatus": {
+            "value": "Enabled"
+        },
+        "autoShutdownTime": {
+            "value": "22:00"
+        },
+        "autoShutdownTimeZone": {
+            "value": "Eastern Standard Time"
+        },
+        "autoShutdownNotificationStatus": {
+            "value": "Disabled"
+        },
+        "autoShutdownNotificationLocale": {
+            "value": "en"
+        }
+    }
+}
