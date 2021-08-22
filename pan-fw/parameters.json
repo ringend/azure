@@ -1,0 +1,86 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "eastus2"
+        },
+        "publicIPAddressName": {
+            "value": "aan-test-fw1"
+        },
+        "publicIPNewOrExisting": {
+            "value": "new"
+        },
+        "publicIPAllocationMethod": {
+            "value": "Dynamic"
+        },
+        "publicIPRGName": {
+            "value": "aan-fw-test-rg"
+        },
+        "vmName": {
+            "value": "aantestfw1"
+        },
+        "adminUsername": {
+            "value": "aanuser"
+        },
+        "authenticationType": {
+            "value": "password"
+        },
+        "adminPasswordOrKey": {
+            "value": null
+        },
+        "vmSize": {
+            "value": "Standard_DS3_v2"
+        },
+        "imageVersion": {
+            "value": "latest"
+        },
+        "srcIPInboundNSG": {
+            "value": "0.0.0.0/0"
+        },
+        "virtualNetworkName": {
+            "value": "aan-hub1-vnet"
+        },
+        "virtualNetworkExistingRGName": {
+            "value": "aan-test1-rg"
+        },
+        "virtualNetworkAddressPrefixes": {
+            "value": [
+                "10.0.0.0/16"
+            ]
+        },
+        "vnetNewOrExisting": {
+            "value": "existing"
+        },
+        "subnet0Name": {
+            "value": "aan-hub1-fweg-mgnt-subnet"
+        },
+        "subnet1Name": {
+            "value": "aan-hub1-fweg-untrust-subnet"
+        },
+        "subnet2Name": {
+            "value": "aan-hub1-fweg-trust-subnet"
+        },
+        "subnet0Prefix": {
+            "value": "10.0.8.0/24"
+        },
+        "subnet1Prefix": {
+            "value": "10.0.6.0/24"
+        },
+        "subnet2Prefix": {
+            "value": "10.0.7.0/24"
+        },
+        "subnet1StartAddress": {
+            "value": "10.0.6.6"
+        },
+        "subnet2StartAddress": {
+            "value": "10.0.7.7"
+        },
+        "bootstrap": {
+            "value": "no"
+        },
+        "customData": {
+            "value": "storage-account=None,access-key=None,file-share=None,share-directory=None"
+        }
+    }
+}

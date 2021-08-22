@@ -1,8 +1,8 @@
 #!/bin/bash
-templateFile="template.2.json"
-devParameterFile="parameters.2.json"
-resourceGroup="cent8-ap4-s1-rg"
-location="Central US"
+templateFile="template.json"
+devParameterFile="parameters.json"
+resourceGroup="cent8-chub-s1-rg"
+location="CentralUS"
 az group create \
   --name $resourceGroup \
   --location $location

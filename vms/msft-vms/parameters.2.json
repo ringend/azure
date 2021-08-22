@@ -3,19 +3,19 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "location": {
-            "value": "centralus"
+            "value": "eastus2"
         },
         "networkInterfaceName": {
-            "value": "cent8-ap4-s1-1111"
+            "value": "centos8-a1-www-1111"
         },
         "subnetName": {
             "value": "default"
         },
         "virtualNetworkId": {
-            "value": "/subscriptions/7114756b-fe22-4a3f-8406-59a0a58a71ea/resourceGroups/djr-east-1/providers/Microsoft.Network/virtualNetworks/east2-vnet-1"
+            "value": "/subscriptions/72f988bf-86f1-41af-91ab-2d7cd011db47/resourceGroups/djr-useast2-rg-1/providers/Microsoft.Network/virtualNetworks/djr-useast2-vnet-1"
         },
         "publicIpAddressName": {
-            "value": "cent8-ap4-s1-ip"
+            "value": "centos8-a1-www-ip"
         },
         "publicIpAddressType": {
             "value": "Dynamic"
@@ -24,13 +24,13 @@
             "value": "Basic"
         },
         "virtualMachineName": {
-            "value": "cent8-ap4-s1"
+            "value": "centos8-a1-www"
         },
         "virtualMachineComputerName": {
-            "value": "cent8-ap4-s1"
+            "value": "centos8-a1-www"
         },
         "virtualMachineRG": {
-            "value": "cent8-ap4-s1-rg"
+            "value": "centos8-a1-www-rg"
         },
         "osDiskType": {
             "value": "Standard_LRS"
