@@ -1,2 +1,2 @@
-# azure Tools and Scripts.
+# Azure Tools and Scripts.
 
