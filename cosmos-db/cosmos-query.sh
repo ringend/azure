@@ -5,8 +5,8 @@
 
 # ---------------------------------------------------
 # Enter the instance name & the primary/master key
-comsosDbInstanceName="aan-cosmos-db-01"
-masterKey="Mo1RO1moJaXtUduQ2lcOrfyrntbctUNel4JVJgrfcDHbp2sNJQy3L6njkOjDk3O13sBgNN3D2PbKpECV8QdFrQ=="
+comsosDbInstanceName="XXXXXXXX"
+masterKey="ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ=="
 # ---------------------------------------------------
 
 # Get "dbs" will list all the databases in the instance
