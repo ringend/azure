@@ -5,8 +5,8 @@
 
 # ---------------------------------------------------
 # Enter the instance name & the primary/master key
-comsosDbInstanceName="XXXXXXXX"
-masterKey="ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ=="
+comsosDbInstanceName="aan-cosmos-db-01"
+masterKey="Mo1RO1moJaXtUduQ2lcOrfyrntbctUNel4JVJgrfcDHbp2sNJQy3L6njkOjDk3O13sBgNN3D2PbKpECV8QdFrQ=="
 # ---------------------------------------------------
 
 # Get "dbs" will list all the databases in the instance
@@ -44,10 +44,20 @@ printf '\n'
 echo "Output:"
 
 # Uncomment to display output without formatting
-#curl --request $verb -H "x-ms-date: $now" -H "x-ms-version: 2018-12-31" -H "x-ms-documentdb-isquery: true" -H "Content-Type: application/query+json" -H "Authorization: $urlEncodedAuthString" $url
+#curl --request $verb \
+#-H "x-ms-date: $now" \
+#-H "x-ms-version: 2018-12-31" \
+#-H "x-ms-documentdb-isquery: true" \
+#-H "Content-Type: application/query+json" \
+#-H "Authorization: $urlEncodedAuthString" $url
 
 # Formats output to insert carriage returns to make more readable
-curl --request $verb -H "x-ms-date: $now" -H "x-ms-version: 2018-12-31" -H "x-ms-documentdb-isquery: true" -H "Content-Type: application/query+json" -H "Authorization: $urlEncodedAuthString" $url | sed -e 's/"Databases":\[/"Databases":\[\n/g' -e 's/},/},\n/g'
+curl --request $verb \
+-H "x-ms-date: $now" \
+-H "x-ms-version: 2018-12-31" \
+-H "x-ms-documentdb-isquery: true" -H "Content-Type: application/query+json" \
+-H "Authorization: $urlEncodedAuthString" $url \
+| sed -e 's/"Databases":\[/"Databases":\[\n/g' -e 's/},/},\n/g' -e 's/}\]/}\n\]/g' 
 
 printf '\n'
 printf '\n'
