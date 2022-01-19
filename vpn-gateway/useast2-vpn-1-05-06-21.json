@@ -1,0 +1,63 @@
+{
+    "name": "djr-useast2-vpn-1",
+    "id": "/subscriptions/926984f7-30ab-4094-9fd5-36fa484fba5b/resourceGroups/djr-useast2-rg-1/providers/Microsoft.Network/virtualNetworkGateways/djr-useast2-vpn-1",
+    "etag": "W/\"82a3d29a-bb4d-4ad6-b144-86c0e116da42\"",
+    "type": "Microsoft.Network/virtualNetworkGateways",
+    "location": "eastus2",
+    "tags": {},
+    "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "04ead348-262e-428e-b259-bb37681c027a",
+        "enablePrivateIpAddress": false,
+        "ipConfigurations": [
+            {
+                "name": "default",
+                "id": "/subscriptions/926984f7-30ab-4094-9fd5-36fa484fba5b/resourceGroups/djr-useast2-rg-1/providers/Microsoft.Network/virtualNetworkGateways/djr-useast2-vpn-1/ipConfigurations/default",
+                "etag": "W/\"82a3d29a-bb4d-4ad6-b144-86c0e116da42\"",
+                "type": "Microsoft.Network/virtualNetworkGateways/ipConfigurations",
+                "properties": {
+                    "provisioningState": "Succeeded",
+                    "privateIPAllocationMethod": "Dynamic",
+                    "publicIPAddress": {
+                        "id": "/subscriptions/926984f7-30ab-4094-9fd5-36fa484fba5b/resourceGroups/djr-useast2-rg-1/providers/Microsoft.Network/publicIPAddresses/djr-useast2-vpn-1-ip"
+                    },
+                    "subnet": {
+                        "id": "/subscriptions/926984f7-30ab-4094-9fd5-36fa484fba5b/resourceGroups/djr-useast2-rg-1/providers/Microsoft.Network/virtualNetworks/djr-useast2-hub-1/subnets/GatewaySubnet"
+                    }
+                }
+            }
+        ],
+        "sku": {
+            "name": "VpnGw1",
+            "tier": "VpnGw1",
+            "capacity": 2
+        },
+        "gatewayType": "Vpn",
+        "vpnType": "RouteBased",
+        "enableBgp": true,
+        "activeActive": false,
+        "bgpSettings": {
+            "asn": 4200000101,
+            "bgpPeeringAddress": "10.1.0.254",
+            "peerWeight": 0,
+            "bgpPeeringAddresses": [
+                {
+                    "ipconfigurationId": "/subscriptions/926984f7-30ab-4094-9fd5-36fa484fba5b/resourceGroups/djr-useast2-rg-1/providers/Microsoft.Network/virtualNetworkGateways/djr-useast2-vpn-1/ipConfigurations/default",
+                    "defaultBgpIpAddresses": [
+                        "10.1.0.254"
+                    ],
+                    "customBgpIpAddresses": [],
+                    "tunnelIpAddresses": [
+                        "40.79.25.26"
+                    ]
+                }
+            ]
+        },
+        "remoteVirtualNetworkPeerings": [
+            {
+                "id": "/subscriptions/926984f7-30ab-4094-9fd5-36fa484fba5b/resourceGroups/djr-useast2-rg-1/providers/Microsoft.Network/virtualNetworks/useast-ap1-vnet/virtualNetworkPeerings/peer-to-hub1"
+            }
+        ],
+        "vpnGatewayGeneration": "Generation1"
+    }
+}

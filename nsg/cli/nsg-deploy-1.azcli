@@ -1,0 +1,35 @@
+RESOURCE_GROUP=djr-useast2-rg-1
+NSG_NAME=spring-cloud-app-nsg
+
+az network nsg create \
+-g $RESOURCE_GROUP \
+-n $NSG_NAME \
+--tags owner deron.ringen
+
+
+az network nsg rule create \
+--resource-group $RESOURCE_GROUP \
+--nsg-name $NSG_NAME \
+--name Home-In \
+--priority 110 \
+--source-address-prefixes 99.36.21.50/32 \
+--source-port-ranges '*' \
+--destination-address-prefixes '*' \
+--destination-port-ranges '*' \
+--access Allow \
+--protocol '*' 
+
+
+az network nsg rule create \
+--resource-group $RESOURCE_GROUP \
+--nsg-name $NSG_NAME \
+--name Internal-In \
+--priority 150 \
+--source-address-prefixes 10.0.0.0/8 192.168.0.0/16 \
+--source-port-ranges '*' \
+--destination-address-prefixes '*' \
+--destination-port-ranges '*' \
+--access Allow \
+--protocol '*'
+
+

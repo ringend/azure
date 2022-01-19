@@ -6,16 +6,16 @@
             "value": "centralus"
         },
         "networkInterfaceName": {
-            "value": "cent8-ap4-s1-1111"
+            "value": "cent8-chub-s1869"
         },
         "subnetName": {
-            "value": "default"
+            "value": "uscent-hub-1-subnet"
         },
         "virtualNetworkId": {
-            "value": "/subscriptions/7114756b-fe22-4a3f-8406-59a0a58a71ea/resourceGroups/djr-east-1/providers/Microsoft.Network/virtualNetworks/east2-vnet-1"
+            "value": "/subscriptions/926984f7-30ab-4094-9fd5-36fa484fba5b/resourceGroups/djr-uscent-rg-1/providers/Microsoft.Network/virtualNetworks/uscent-hub-1"
         },
         "publicIpAddressName": {
-            "value": "cent8-ap4-s1-ip"
+            "value": "cent8-chub-s1-ip"
         },
         "publicIpAddressType": {
             "value": "Dynamic"
@@ -24,13 +24,13 @@
             "value": "Basic"
         },
         "virtualMachineName": {
-            "value": "cent8-ap4-s1"
+            "value": "cent8-chub-s1"
         },
         "virtualMachineComputerName": {
-            "value": "cent8-ap4-s1"
+            "value": "cent8-chub-s1"
         },
         "virtualMachineRG": {
-            "value": "cent8-ap4-s1-rg"
+            "value": "cent8-chub-s1-rg"
         },
         "osDiskType": {
             "value": "Standard_LRS"
@@ -41,8 +41,8 @@
         "adminUsername": {
             "value": "djr"
         },
-        "adminPassword": {
-            "value": "root123!55az"
+        "adminPublicKey": {
+            "value": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDXcfW+hYblxamokqwIkfH6Kx9imA2xCdb1GiprWa3hijyww2S9oaCPdzC9vnWYu4Osc71nMKWVXFfNs3D2Xeerdyl3m0evE2D3t/A3NyigyNGOhyMUItlDdm+nIazct5ai+wuaoEB96INYNsErO3Fr3XAXm57jT988fx5vmVteIDdNISSovxr2gCBiFs8L1DFwH6MNXBn5N4+qBt7/u307n3ylG/qFoU6lo/0of9o4RCn1cZ1VdNeqVNPe8Dw9ydcFFYFiuU0+QyWoPXi6G+z5RhdbGOii+CiwTUPHFonra6jSi3xjaXinpiDfIvGxpml7SqPSSao0mZLgkSInFun5 djr@LAPTOP-51N42I5B\n"
         },
         "autoShutdownStatus": {
             "value": "Enabled"
