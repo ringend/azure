@@ -1,0 +1,10 @@
+#!/bin/bash
+ 
+# Get list of peered VNets
+az account set --subscription "NFCU-HUB-EASTUS"
+az network vnet peering list --resource-group NFCU-HUB-NETENG-RG --vnet-name NFCU-HUB-VNET | \                                       grep -e /subscriptions/ -e /virtualNetworks/ | grep -v /virtualNetworkPeerings | \
+awk -F '/' '{print $3, $5, $9;}' | \
+sed 's/",//g' \
+# > "output-file.txt"
+ 
+ 
